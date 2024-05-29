@@ -1,4 +1,6 @@
-// @brief SELECTION-SORT
+// @brief SELECTION_SORT
+// @Language：C++
+// @data structure：数组
 
 /*
 伪代码
@@ -17,8 +19,6 @@ using namespace std;
 void SELECTION_SORT(int A[], int len);
 void exchange(int &x, int &y);
 
-// @Language：C++
-// @data structure：数组
 // @brief c选择排序
 // @param：A 排序数组
 // @param：len 数组长度

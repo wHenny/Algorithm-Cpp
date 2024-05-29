@@ -1,4 +1,6 @@
-// @brief BUBBLE-SORT
+// @brief BUBBLE_SORT
+// @language：C++
+// @data structure：数组
 
 /*
 伪代码
@@ -15,8 +17,6 @@ using namespace std;
 void BUBBLE_SORT(int A[], int len);
 void exchange(int &x, int &y);
 
-// @language：C++
-// @data structure：数组
 // @brief 冒泡排序
 // @param：A 排序数组
 // @param：len 数组长度

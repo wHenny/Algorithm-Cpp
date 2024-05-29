@@ -1,12 +1,14 @@
-// @brief MERGE-SORT
+// @brief MERGE_SORT 分治策略
+// @language：C++
+// @data structure：数组
 
 /*
 伪代码
-MERGE-SORT(A, p, r)
+MERGE_SORT(A, p, r)
 if p < r
     q =[(p + r)/2]
-    MERGE-SORT(A, p, q)
-    MERGE-SORT(A，q + 1，r)
+    MERGE_SORT(A, p, q)
+    MERGE_SORT(A，q + 1，r)
     MERGE(A, p, q, r)
 
 MERGE(A, p, q, r)
@@ -37,8 +39,6 @@ using namespace std;
 void MERGE_SORT(int A[], int p, int r);
 void MERGE(int A[], int p, int q, int r);
 
-// @language：C++
-// @data structure：数组
 // @brief 归并排序
 // @param：A 排序数组
 // @param：p 头指针
