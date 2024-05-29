@@ -1,11 +1,14 @@
-// @brief SELECTION-SORT 伪代码
+// @brief SELECTION-SORT
 
-// for j = 1 to A.length - 1
-// 	smallest = j
-// 	for i = j + 1 to A.length
-// 		if A[i] < A[smallest]
-// 			smallest = i
-// 	exchange A[j] with A[smallest]
+/*
+伪代码
+for j = 1 to A.length - 1
+    smallest = j
+    for i = j + 1 to A.length
+        if A[i] < A[smallest]
+            smallest = i
+    exchange A[j] with A[smallest]
+*/
 
 #include <iostream>
 

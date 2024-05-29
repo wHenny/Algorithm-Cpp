@@ -1,31 +1,34 @@
-// @brief MERGE-SORT 伪代码
+// @brief MERGE-SORT
 
-// MERGE-SORT(A, p, r)
-// if p < r
-//     q =[(p + r)/2]
-//     MERGE-SORT(A, p, q)
-//     MERGE-SORT(A，q + 1，r)
-//     MERGE(A, p, q, r)
+/*
+伪代码
+MERGE-SORT(A, p, r)
+if p < r
+    q =[(p + r)/2]
+    MERGE-SORT(A, p, q)
+    MERGE-SORT(A，q + 1，r)
+    MERGE(A, p, q, r)
 
-// MERGE(A, p, q, r)
-// n1 = q - p + 1
-// n2 = r - p
-// let L[1..n1+1] and R[1..n2+1] be new array
-// for i = 1 to n1
-//     L[i] = A[p + i -1]
-// for j = 1 to n2
-//     R[j] = A[q + j]
-// L[n1 + 1] = 0x3f3f3f3f
-// R[n2 + 1] = 0x3f3f3f3f
-// i = 1
-// j = 1
-// for k = p to r
-//     if L[i] <= R[j]
-//         A[k] = L[i]
-//         i = i + 1
-//     else
-//         A[k] = R[j]
-//         j = j + 1
+MERGE(A, p, q, r)
+n1 = q - p + 1
+n2 = r - p
+let L[1..n1+1] and R[1..n2+1] be new array
+for i = 1 to n1
+    L[i] = A[p + i -1]
+for j = 1 to n2
+    R[j] = A[q + j]
+L[n1 + 1] = 0x3f3f3f3f
+R[n2 + 1] = 0x3f3f3f3f
+i = 1
+j = 1
+for k = p to r
+    if L[i] <= R[j]
+        A[k] = L[i]
+        i = i + 1
+    else
+        A[k] = R[j]
+        j = j + 1
+*/
 
 #include <iostream>
 

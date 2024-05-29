@@ -1,9 +1,12 @@
-// @brief BUBBLE-SORT 伪代码
+// @brief BUBBLE-SORT
 
-// for i = 1 to A.length - 1
-//     for j = A.length downto i + 1
-//         if A[j] < A[j - 1]
-//             exchange A[j] with A[j - 1]
+/*
+伪代码
+for i = 1 to A.length - 1
+    for j = A.length downto i + 1
+        if A[j] < A[j - 1]
+            exchange A[j] with A[j - 1]
+*/
 
 #include <iostream>
 
