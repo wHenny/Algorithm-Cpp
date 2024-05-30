@@ -1,4 +1,4 @@
-// @brief SELECTION_SORT
+// @brief SELECTION_SORT 选择排序
 // @Language：C++
 // @data structure：数组
 
@@ -19,7 +19,7 @@ using namespace std;
 void SELECTION_SORT(int A[], int len);
 void exchange(int &x, int &y);
 
-// @brief c选择排序
+// @brief 选择排序
 // @param：A 排序数组
 // @param：len 数组长度
 
@@ -52,8 +52,9 @@ void exchange(int &x, int &y)
 int main()
 {
     int A[] = {2, 4, 3, 1, 6, 5};
-    SELECTION_SORT(A, 6);
-    for (int i = 0; i < 6; i++)
+    int len = sizeof(A) / sizeof(A[0]);
+    SELECTION_SORT(A, len);
+    for (int i = 0; i < len; i++)
     {
         cout << A[i] << " ";
     }

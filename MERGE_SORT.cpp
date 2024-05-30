@@ -1,4 +1,4 @@
-// @brief MERGE_SORT 分治策略
+// @brief MERGE_SORT 归并排序 分治策略
 // @language：C++
 // @data structure：数组
 
@@ -55,7 +55,7 @@ void MERGE_SORT(int A[], int p, int r)
     }
 }
 
-// @brief 将数组A[p, q], A[q + 1, r]归并排序
+// @brief 将数组A[p, q], A[q + 1, r]排序
 // @param：A 排序数组
 // @param：p 头指针
 // @param：q 中间指针
@@ -93,8 +93,9 @@ void MERGE(int A[], int p, int q, int r)
 int main()
 {
     int A[] = {2, 4, 3, 1, 6, 5, 7};
-    MERGE_SORT(A, 0, 6);
-    for (int i = 0; i < 7; i++)
+    int len = sizeof(A) / sizeof(A[0]);
+    MERGE_SORT(A, 0, len);
+    for (int i = 0; i < len; i++)
     {
         cout << A[i] << " ";
     }

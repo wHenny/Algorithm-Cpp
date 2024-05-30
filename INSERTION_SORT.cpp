@@ -1,4 +1,4 @@
-// @brief INSERTION_SORT
+// @brief INSERTION_SORT 插入排序
 // @language：C++
 // @data structure：数组
 
@@ -42,8 +42,9 @@ void INSERTION_SORT(int A[], int len)
 int main()
 {
 	int A[] = {2, 4, 3, 1, 6, 5};
-	INSERTION_SORT(A, 6);
-	for (int i = 0; i < 6; i++)
+	int len = sizeof(A) / sizeof(A[0]);
+	INSERTION_SORT(A, len);
+	for (int i = 0; i < len; i++)
 	{
 		cout << A[i] << " ";
 	}

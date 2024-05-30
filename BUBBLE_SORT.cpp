@@ -1,4 +1,4 @@
-// @brief BUBBLE_SORT
+// @brief BUBBLE_SORT 冒泡排序
 // @language：C++
 // @data structure：数组
 
@@ -48,8 +48,9 @@ void exchange(int &x, int &y)
 int main()
 {
     int A[] = {2, 4, 3, 1, 6, 5};
-    BUBBLE_SORT(A, 6);
-    for (int i = 0; i < 6; i++)
+    int len = sizeof(A) / sizeof(A[0]);
+    BUBBLE_SORT(A, len);
+    for (int i = 0; i < len; i++)
     {
         cout << A[i] << " ";
     }
